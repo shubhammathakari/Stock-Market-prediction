@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: lightgray;}
+h1   {
+      color: blue;
+      background-color: yellow;
+}
+h1   {style="text-align:center;"}
+h2    {color: green;}
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center;"> Predicting Stock Opening Value</h1>
+<form action="{{ url_for('predict')}}" method="post">
+<h2 style="text-align:center;">Last day opening Value</h2>
+<input id="second" name="Present_Price" required="required">
+<br><br><button id="sub" type="submit ">Calculate the Price</button>
+
+</form>
+
+
+
+<br><br><h3 style="text-align:center;">{{ prediction_text }}<h3>
+
+
+<style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 60px;
+        }
+
+    </style>
+
+
+
+</body>
+</html>
+</html>
